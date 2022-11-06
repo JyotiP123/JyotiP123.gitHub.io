@@ -1,0 +1,262 @@
+#main{
+    width: 100%;
+
+}
+#navbar{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: rgb(23, 37, 56);
+}
+#menus{
+    width: 70%;
+    height: 5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    background-color: rgb(23, 37, 56);
+}
+#menus > div{
+    width: 10rem;
+    font-size: 23px;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 25px;
+    color:white;
+}
+#card1{
+    width: 101%;
+    height: 43rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(176, 176, 227);
+    margin-left: -8px;
+    /* margin-bottom: 50px; */
+}
+#jyotipic{
+    width: 10rem;     
+    /* border: 1px solid; */
+    margin: auto;
+}
+#jyotipic > img{            
+    border-radius: 50%;
+    margin-top: 4rem;
+}  
+#aboutinfo{
+    width: 45rem;
+    font-size: 23px;
+    margin-top: 12rem; 
+    /* border: 1px solid; */
+    margin-right: 17rem;
+}
+
+#extras{
+    width: 101%;
+    height: 15rem;
+    margin: auto;
+    text-align: center;
+   
+
+}
+
+#extras > button{
+    margin-right: 50px;
+    font-size: 25px;
+    padding: 10px 40px 10px 40px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(133, 133, 188);
+    color: white;
+}
+
+#extras > button:hover{
+    background-color: rgb(95, 95, 134);
+    border-radius: 25px;
+}
+
+
+
+#card2{
+    width: 101%;
+    height: 27rem;
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-left: -8px;
+    /* border: 1px solid; */
+    margin-bottom: 50px;
+    background-color: #f1f1f1;
+    padding-top: 30px;
+}
+#skill-section{
+    width:60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2;
+    /* border: 1px solid red; */
+    gap: 20px;
+    margin-top: 60px;
+}
+#skill-section > div{
+    /* border: 1px solid rgb(97, 92, 92); */
+    height: 7rem;
+    text-align: center;
+    
+}
+#skill-section > div > img{
+    width: 70%;
+    height: 70%;
+}
+
+#card3{
+    width: 101%;
+    height: 35rem;
+    margin: auto;
+    /* display: flex;
+    justify-content: space-evenly; */
+    margin-left: -8px;
+    background-color: white;
+    margin-top: -20px;
+}
+
+#education-tabs{
+    margin: auto;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    
+}
+
+#education-tabs > div{
+    /* border: 1px solid; */
+    width: 40%rem;
+    height: 8rem;
+    padding-left: 30px;
+}
+
+#card3  p {
+    font-size: 20px;
+    margin-top: -10px;
+}
+
+.purple{
+border-radius: 1em 0 1em 0;
+background-image: 
+linear-gradient(-100deg,
+            rgba(241, 241, 241, 0.2),
+            rgb(176, 176, 227)95%,
+            rgba(142, 196, 170, 0.1)
+        );
+}
+
+
+#card4{
+    width: 101%;
+    height: 20rem;
+    margin: auto;
+    margin-left: -8px;
+    background-color: #f1f1f1;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+#company-info{
+    width: 20rem;
+    height:5rem;
+    display:flex; 
+    margin: auto; 
+    text-align:center;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#company-info > div:first-child{
+    width: 13%;
+    /* border: 1px solid; */
+}
+
+#company-info img{
+    width: 100%;
+}
+
+#company-info > div:last-child{
+    /* border: 1px solid; */
+    font-size: 25px;
+    margin-top: -15px;
+    font-weight:bold ;
+}
+
+#card5{
+    width: 101%;
+    height: 45rem;
+    margin: auto;
+    margin-left: -8px;
+    /* border: 1px solid; */
+}
+
+.newbuttons{
+    width:6rem;
+    padding:7px; 
+    font-size: 15px; 
+    background-color: rgb(66, 66, 103); 
+    border: none; 
+    border-radius: 4px;
+    color: white;
+  }
+
+  .newbuttons:hover{
+    background-color: rgb(95, 95, 134);
+    border-radius: 25px;
+}
+
+#card6{
+    width: 101%;
+    height: 27rem;
+    margin: auto;
+    margin-left: -8px;
+    background-color: #f1f1f1;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#card7{
+    width: 101%;
+    height: 37rem;
+    margin: auto;
+    margin-left: -8px;
+    margin-top: 5rem;
+    background-color: rgb(147, 147, 195);
+}
+#contactinfo{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+#icons{
+    width: 20rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#icons > div{
+    width: 8%;
+}
+
+#icons > div > img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
