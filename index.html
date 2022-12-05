@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jyoti Pardhi</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/58f99d5ee6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="main">
         <div id="navbar">
             <div id="menus">
-                <div>Home</div>
+                <div>
+                    <p style="font-family: 'Brush Script MT', cursive; font-size: 35px; margin-left: -150px; margin-top: -10px;">Jyoti Pardhi</p>
+                </div>
                 <div>Skills</div>
                 <div>Education</div>
                 <div>Experience</div>
@@ -29,14 +32,23 @@
                 <h1>Jyoti Pardhi</h1>
                 <h3>Java Backend Developer</h3>
                 <p>
-                    Hey! My name is Jyoti and I'm a Java developer with a passion for backend end development. 
+                    Hey! My name is Jyoti and I'm a Java developer for backend development. 
                     I'm currently a student at Masai School pursuing a degree in Full stack web developer with a
                     major in interaction backend development. I aspire toward a career that will allow me to channel 
                     my creativity through crafting beautiful software and engaging experiences.
                 </p>
+                <div style="width: 30%; height: 70px; display: flex; justify-content: space-between;">
+                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="https://github.com/JyotiP123"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt=""></a></button></div>
+                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="https://www.linkedin.com/in/jyoti-pardhi-5b783b14b"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt=""></a></button></div>
+                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="Resume/Jyoti Pardhi Resume.pdf" download="Jyoti-Pardhi-Resume"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_12_icon-icons.com_61498.png" alt=""></a></button></div>
+                </div>
+
+                      
+
             </div>
         </div>
-
+ 
+<!-- 
         <div id="extras">
             <br>
             <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px;">
@@ -47,7 +59,7 @@
             <button onclick="showresume()">Resume</button>
             <button onclick="showlinkedin()">LinkedIn</button>
             <br><br>
-        </div>
+        </div> -->
 
         <div id="card2">     
             <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px;">Technologies I have worked with :</h1>       
@@ -175,11 +187,33 @@
 
         <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-
         <div id="card6">
             <h1 id="calendargit" style="text-align:center; margin-bottom: 50px;">My Contribution in Github </h1>
             <div class="calendar" style="width:75%; margin:auto; height:20rem;"></div> 
         </div>
+    </div>
+    <br><br><br>
+
+    <div id="othergithub">
+        <p><img  src="https://github-readme-stats.vercel.app/api?username=JyotiP123&&show_icons=true&theme=light" alt="JyotiP123" /></p> 
+        <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=JyotiP123&show_icons=true&theme=light" alt="JyotiP123" /></p>      
+    </div>
+
+    <div style="text-align:center; margin-top:-50px; margin-bottom:70px; margin-top: 20px;">
+        <p style="text-align: center;"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=JyotiP123&show_icons=true&theme=light&locale=en&layout=compact" alt="JyotiP123" /></p>
+    </div>
+
+    <!-- <div id="activitygraph">
+        <p><a href="https://activity-graph.herokuapp.com/graph?username=JyotiP123&bg_color=ffcfe9&color=9e4c98&line=9e4c98&point=583232&area=true&hide_border=true"><img src="https://activity-graph.herokuapp.com/graph?username=JyotiP123&theme=react-light" alt="JyotiP123"/></a></p>
+    </div> -->
+    
+
+    <script>
+        GitHubCalendar(".calendar", "JyotiP123");
+        GitHubCalendar(".calendar", "JyotiP123", { responsive: true });
+    </script>
+
+
 
         <div id="card7">
             <br><br>

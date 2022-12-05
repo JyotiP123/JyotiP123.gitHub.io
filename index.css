@@ -258,5 +258,41 @@ linear-gradient(-100deg,
     cursor: pointer;
 }
 
+#othergithub{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 20rem;
+    gap: 50px;
+  }
+  
+  
+  @media (max-width:950px){
+    #othergithub {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 15rem);
+    }
+  }
 
+  #activitygraph{
+    width:70%;
+    margin: auto;
+  }
+  
+  #activitygraph  img{
+    width: 100%;
+  }
+  
+  @media (max-width:900px){
+    #activitygraph {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width:650px){
+    #activitygraph {
+      width: 70%;
+    }
+  }
 
