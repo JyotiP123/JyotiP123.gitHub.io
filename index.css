@@ -332,12 +332,22 @@ linear-gradient(-100deg,
     font-weight:bold ;
 }
 
-#card5{
+
+/* #cardnew{
+  width: 101%;
+  height: 45rem;
+  margin: auto;
+  margin-left: -8px;
+} */
+
+
+
+#card5, #card5a{
     width: 101%;
     height: 45rem;
     margin: auto;
-    margin-left: -8px;
     background-color: aliceblue;
+    margin-left: -8px;
     /* border: 1px solid; */
 }
 
@@ -361,7 +371,6 @@ linear-gradient(-100deg,
     height: 27rem;
     margin: auto;
     margin-left: -8px;
-    background-color: #f1f1f1;
     padding-top: 50px;
     padding-bottom: 100px;
 }

@@ -1,18 +1,18 @@
-let showgithub = () => {
-    window.open("https://github.com/JyotiP123", "_blank");
-}
+// let showgithub = () => {
+//     window.open("https://github.com/JyotiP123", "_blank");
+// }
 let showresume = () => {
     window.open("https://drive.google.com/file/d/10lY_7N0o30qTEa2__tpLtO_X8WrLIkWG/view", "_blank");
 }
-let showlinkedin = () => {
-    window.open("https://www.linkedin.com/in/jyoti-pardhi-5b783b14b", "_blank");
-}
-let showmail = () => {
-    window.open("https://mail.google.com/mail/u/0/", "_blank");
-}
-let showinsta = () => {
-    window.open("https://www.instagram.com/jyoti__pardhi/", "_blank");
-}
+// let showlinkedin = () => {
+//     window.open("https://www.linkedin.com/in/jyoti-pardhi-5b783b14b", "_blank");
+// }
+// let showmail = () => {
+//     window.open("https://mail.google.com/mail/u/0/", "_blank");
+// }
+// let showinsta = () => {
+//     window.open("https://www.instagram.com/jyoti__pardhi/", "_blank");
+// }
 
 
 let overstock_git = () => {
@@ -33,8 +33,31 @@ let redbus_git = () => {
 let redbus_site = () => {
     window.open("https://phenomenal-kleicha-acfce4.netlify.app/", "_blank");
 }
+let hotstar_git = () => {
+    window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-5/you", "_blank");
+}
+let hotstar_site = () => {
+    window.open("https://sparkling-heliotrope-3eefe7.netlify.app", "_blank");
+}
+let weather_git = () => {
+    window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-4/you", "_blank");
+}
+let weather_site = () => {
+    window.open("https://rainbow-faun-1d944d.netlify.app/", "_blank");
+}
+// let hotstar_git = () => {
+//     window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-5/you", "_blank");
+// }
+// let hotstar_site = () => {
+//     window.open("https://sparkling-heliotrope-3eefe7.netlify.app", "_blank");
+// }
+
+
 
 
 
 GitHubCalendar(".calendar", "JyotiP123");
 GitHubCalendar(".calendar", "JyotiP123", { responsive: true });
+
+
+
