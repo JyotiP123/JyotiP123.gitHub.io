@@ -12,16 +12,45 @@
 <body>
     <div id="main">
         <div id="navbar">
-            <div id="menus">
-                <div>
-                    <p style="font-family: 'Brush Script MT', cursive; font-size: 35px; margin-left: -150px; margin-top: -10px;">Jyoti Pardhi</p>
+            <div id="leftmenus">
+                <p>Jyoti Pardhi</p>
+            </div>
+            <div id="rightmenus">
+                <div><p>Home</p></div>
+                <div><p>Skills</p></div>
+                <div><p>Education</p></div>
+                <div><p>Projects</p></div>
+                <div><p>Contact</p></div>
+            </div>
+        </div>
+        <div id="card0">
+            <div id="stars"></div>
+            <div id="container">
+                <h1 style="font-size: 70px; font-weight: 400;">Jyoti Pardhi</h1>
+                <div style="font-size: 18px; margin-top: -30px;">I am an aspiring Java Backend Developer with some remarkable analytical skills.</div>
+                <div style="font-size: 18px;"> Looking forward to start my career as a web-developer.</div>
+                <div id="social_icons">
+                    <div>                 
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/JyotiP123" aria-label="My Github">
+                            <i class="fab fa-github fa-2x socialicons"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" rel="noopener noreferrer"  href="https://www.linkedin.com/in/jyoti-pardhi-5b783b14b" aria-label="My linkedin">
+                            <i class="fab fa-linkedin fa-2x socialicons">
+                            </i>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank" rel="noopener noreferrer"  href="https://www.instagram.com/jyoti__pardhi/" aria-label="My Instagram">
+                            <i class="fab fa-instagram fa-2x socialicons">
+                            </i>
+                        </a>
+                    </div>
                 </div>
-                <div>Skills</div>
-                <div>Education</div>
-                <div>Experience</div>
-                <div>Projects</div>
-                <div>GitHub Stats</div>
-                <div>Contact</div>
+                <div id="about">
+                    <div><button id="about_button" onclick="">More about me</button></div>
+                </div>
             </div>
         </div>
         <div id="card1">
@@ -29,40 +58,26 @@
                 <img src="https://user-images.githubusercontent.com/105926905/200050017-946e2840-c7b2-4c79-8d66-35306dceac9b.png" alt="jyotipic">
             </div>
             <div id="aboutinfo">
-                <h1>Jyoti Pardhi</h1>
-                <h3>Java Backend Developer</h3>
-                <p>
-                    Hey! My name is Jyoti and I'm a Java developer for backend development. 
+                <h2 style="font-weight: 500;">Hii, I am Jyoti</h2>
+                <p style="font-size: 20px;"> I'm a Java developer for backend development. 
                     I'm currently a student at Masai School pursuing a degree in Full stack web developer with a
                     major in interaction backend development. I aspire toward a career that will allow me to channel 
                     my creativity through crafting beautiful software and engaging experiences.
-                </p>
-                <div style="width: 30%; height: 70px; display: flex; justify-content: space-between;">
-                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="https://github.com/JyotiP123"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/936/PNG/512/github-logo_icon-icons.com_73546.png" alt=""></a></button></div>
-                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="https://www.linkedin.com/in/jyoti-pardhi-5b783b14b"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" alt=""></a></button></div>
-                    <div><button style="width: 5rem; border-radius: 10px;  background-color: #b0b0e3; border:none;" ><a href="Resume/Jyoti Pardhi Resume.pdf" download="Jyoti-Pardhi-Resume"><img style="width: 40%; cursor: pointer;" src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_12_icon-icons.com_61498.png" alt=""></a></button></div>
-                </div>
-
-                      
-
+                </p>    
+                <div id="resume">
+                    <div><button id="res_button" onclick="showresume()">Resume</button></div>
+                    <div>
+                        <a href="Resume/Jyoti Pardhi Resume.pdf" download="Jyoti-Pardhi-Resume">
+                            <img style="width: 35%; cursor: pointer; margin-top: 5px;" src="https://cdn.icon-icons.com/icons2/692/PNG/512/seo-social-web-network-internet_12_icon-icons.com_61498.png" alt="">
+                        </a>
+                    </div>
+                </div>              
             </div>
         </div>
  
-<!-- 
-        <div id="extras">
-            <br>
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px;">
-                Checkout more about me here!! 
-            </h1>
-            <br>
-            <button onclick="showgithub()">GitHub</button>
-            <button onclick="showresume()">Resume</button>
-            <button onclick="showlinkedin()">LinkedIn</button>
-            <br><br>
-        </div> -->
 
         <div id="card2">     
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px;">Technologies I have worked with :</h1>       
+            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; font-weight: 600;">Skills I have worked with :</h1>       
             <div id="skill-section">
                 <div>
                     <img src="./Images/java.svg" alt="java">
@@ -92,29 +107,29 @@
         </div>
 
         <div id="card3">
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; padding-top: 15px;">My Educational Background</h1><br>
+            <h1 id="edu_title">My Educational Background</h1><br>
             <div id="education-tabs">
                 <span class="purple">
                     <div>
-                        <h2>Full Stack Web Development</h2>
-                        <p>Masai School, Bengaluru</p>
-                        <p>April 2022 - December 2022</p>               
+                        <h2 class="edu">Full Stack Web Development</h2>
+                        <p class="edu">Masai School, Bengaluru</p>
+                        <p class="edu">April 2022 - December 2022</p>               
                     </div>
                 </span>
                 <div></div>
                 <div></div>
                 <span class="purple">
                 <div>
-                    <h2>MSc (Computer Science)</h2>
-                    <p>Dhote bandhu science college, Gondia</p>
-                    <p>July 2017 - May 2019</p>
+                    <h2 class="edu">MSc (Computer Science)</h2>
+                    <p class="edu">Dhote bandhu science college, Gondia</p>
+                    <p class="edu">July 2017 - May 2019</p>
                 </div>
             </span>
             <span class="purple">
                 <div>
-                    <h2>BSc (Computer Science)</h2>
-                    <p>Dhote bandhu science college, Gondia</p>
-                    <p>July 2013 - June 2016</p>
+                    <h2 class="edu">BSc (Computer Science)</h2>
+                    <p class="edu">Dhote bandhu science college, Gondia</p>
+                    <p class="edu">July 2013 - June 2016</p>
                 </div>
             </span>
                 <div></div>
@@ -122,20 +137,20 @@
         </div>        
 
         <div id="card4">
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; padding-top: 15px;">My Work Experience</h1><br>
+            <h1 id="work_title">My Work Experience</h1><br>
             <p style="text-align: center; color:rgb(23, 37, 56); font-size: 25px; margin-top:-10px; margin-bottom:10px;">Worked as <strong style="color: #ec4d1c;">Web Operator</strong> at</p>
             <div id="company-info">                
                 <div><img src="https://user-images.githubusercontent.com/105926905/200106893-95a14de5-bd8b-4493-a1d5-d75a81e95fa9.jpg" alt="php"></div>
                 <div><p style="color: #476a84;">PHP Workshop Gondia</p></div>            
             </div>
-            <p style="text-align: center; color:rgb(23, 37, 56); font-size: 20px; margin-top:-30px;">July 2016 - October 2018</p>
-            <p style="text-align: center; color:rgb(23, 37, 56); font-size: 23px; margin-top:-10px; ">Online data entry work along with Web
+            <p style="text-align: center; color:rgb(23, 37, 56); font-size: 18px; margin-top:-30px;">July 2016 - October 2018</p>
+            <p style="text-align: center; color:rgb(23, 37, 56); font-size: 20px; margin-top:-10px; ">Online data entry work along with Web
                 Searching and management of excel sheets.</p>
         </div>
         <br><br>         
 
         <div id="card5">
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; padding-top: 15px;">My Projects</h1><br>
+            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; padding-top: 15px; font-weight: 600;">My Projects</h1><br>
             <div id="projectlist" style="width: 80%; margin: auto; text-align:center; display:flex; justify-content: space-between;">
                 <div style="width:32%; height: 35rem; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
                     <h1 style="margin-top:20px;">Overstock Clone</h1>
@@ -217,7 +232,7 @@
 
         <div id="card7">
             <br><br>
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px;">Contact Me</h1> 
+            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; font-weight: 700;">Contact Me</h1> 
             <br>
 
                 <div id="contactinfo">
