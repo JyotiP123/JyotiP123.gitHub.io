@@ -16,11 +16,12 @@
                 <p>Jyoti Pardhi</p>
             </div>
             <div id="rightmenus">
-                <div><p>Home</p></div>
-                <div><p>Skills</p></div>
-                <div><p>Education</p></div>
-                <div><p>Projects</p></div>
-                <div><p>Contact</p></div>
+                <div><p onclick="homepage()">Home</p></div>
+                <div><p onclick="About()">About me</p></div>
+                <div><p onclick="Skills()">Skills</p></div>
+                <div><p onclick="Projects()">Projects</p></div>
+                <div><p onclick="Contact()">Contact</p></div>
+                <div><p onclick="showresume()">Resume</p></div>
             </div>
         </div>
         <div id="card0">
@@ -47,9 +48,15 @@
                             </i>
                         </a>
                     </div>
+                    <div>
+                        <a target="_blank" rel="noopener noreferrer"  href="pardhijyoti08@gmail.com" aria-label="My Instagram">
+                            <i class="fa fa-envelope fa-2x socialicons"  aria-hidden="true"></i>
+                            </i>
+                        </a>
+                    </div>
                 </div>
                 <div id="about">
-                    <div><button id="about_button" onclick="">More about me</button></div>
+                    <div><button id="about_button" onclick="Aboutme()">More about me</button></div>
                 </div>
             </div>
         </div>
@@ -59,11 +66,11 @@
             </div>
             <div id="aboutinfo">
                 <h2 style="font-weight: 500;">Hii, I am Jyoti</h2>
-                <p style="font-size: 20px;"> I'm a Java developer for backend development. 
+                <div id="infordiv"> <p style="font-size: 20px;"> I'm a Java developer for backend development. 
                     I'm currently a student at Masai School pursuing a degree in Full stack web developer with a
                     major in interaction backend development. I aspire toward a career that will allow me to channel 
                     my creativity through crafting beautiful software and engaging experiences.
-                </p>    
+                </p></div>
                 <div id="resume">
                     <div><button id="res_button" onclick="showresume()">Resume</button></div>
                     <div>
@@ -150,12 +157,13 @@
         <br><br>
         
         <div id="card5">
-            <h1 style="text-align: center; color:rgb(23, 37, 56); font-size: 33px; padding-top: 25px; font-weight: 600;">My Projects</h1><br>
-            <div id="projectlist" style="width: 80%; margin: auto; text-align:center; display:flex; justify-content: space-between;">
-                <div style="width:32%; background-color: white; height: 35rem; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+            <h1 id="proj_title">My Projects</h1><br>
+            <div id="projectlist">
+                <div>
                     <h1 style="margin-top:20px; font-weight: 600;">Overstock Clone</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/195958896-7343e1bf-2f4c-4e6d-b67b-05375b729261.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/195958896-7343e1bf-2f4c-4e6d-b67b-05375b729261.png" alt="">
                     <br>
                     <p>Inspired by overstock.com,Inc. is an American internet retailer selling primarily furniture. Created a clone of it with the functionalities of the original One..</p>
                     <br>
@@ -166,10 +174,11 @@
                         <button onclick="overstock_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
-                <div style="width:32%;  background-color: white; height: 35rem;; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+                <div >
                     <h1 style="margin-top:20px; font-weight: 600;">Myhours Clone</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/195958912-dd6a76b2-73d5-41aa-8f10-5294c22e5a62.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/195958912-dd6a76b2-73d5-41aa-8f10-5294c22e5a62.png" alt="">
                     <br>
                     <p>An All-in-one Hour Tracking Solution with Cost Calculations, Screenshots & Integrations. Follow Projects in Real Time with Company hour tracking.</p>
                     <br>
@@ -180,10 +189,11 @@
                         <button onclick="myhour_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
-                <div style="width:32%; background-color: white; height: 35rem; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+                <div>
                     <h1 style="margin-top:20px; font-weight: 600;">Redbus Clone</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/195958908-f5c2bb03-b382-44e8-87b2-f9f1e1ba3024.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/195958908-f5c2bb03-b382-44e8-87b2-f9f1e1ba3024.png" alt="">
                   <br>     
         
                     <p>redBus is the world's leading bus ticket booking company. It operates in 6 countries (India, Malaysia, Singapore, Indonesia, Peru, and Colombia).</p>
@@ -195,14 +205,11 @@
                         <button onclick="redbus_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div id="card5a">
-            <div id="projectlist" style="width: 80%; margin: auto; text-align:center; display:flex; justify-content: space-between;">
-                <div style="background-color: white; width:32%; height: 35rem; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+                <div>
                     <h1 style="margin-top:20px; font-weight: 600;">Hotstar Page Clone</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/207049098-6f1f33be-60d3-4d87-ad93-31912d3e9225.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/207049098-6f1f33be-60d3-4d87-ad93-31912d3e9225.png" alt="">
                     <br>
                     <p>Hotstar is an Indian brand of subscription video on-demand over-the-top streaming service. I have tried to clone the 
                         home page with search functionalities.
@@ -215,10 +222,11 @@
                         <button onclick="hotstar_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
-                <div style="background-color: white; width:32%; height: 35rem;; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+                <div >
                     <h1 style="margin-top:20px; font-weight: 600;">Weather App</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/207052232-8c9666f7-5c7f-41ae-b293-6636f7ef58f3.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/207052232-8c9666f7-5c7f-41ae-b293-6636f7ef58f3.png" alt="">
                     <br>
                     <p>This project is related to weather of city. You can see weather forecast of any city you want. It also shows location of that city in google map.</p>
                     <br>
@@ -229,19 +237,22 @@
                         <button onclick="weather_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
-                <div style=" background-color: white; width:32%; height: 35rem; box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; ">
+                <div>
                     <h1 style="margin-top:20px; font-weight: 600;">Redbus Clone</h1>
                     <br>
-                    <img style="width:80%; height:12rem; margin-bottom: 8px;" src="https://user-images.githubusercontent.com/105926905/195958908-f5c2bb03-b382-44e8-87b2-f9f1e1ba3024.png" alt="">
+                    <img style="width:80%; height:12rem; margin-bottom: 8px;" 
+                    src="https://user-images.githubusercontent.com/105926905/207054374-92bd339e-262d-40f9-8873-fd2b413a3336.png" alt="">
                   <br>     
         
-                    <p>redBus is the world's leading bus ticket booking company. It operates in 6 countries (India, Malaysia, Singapore, Indonesia, Peru, and Colombia).</p>
+                    <p>PhonePe is an app for online transactions. In this project, I have tried to 
+                        implement the complete payment process of phonepe.
+                    </p>
                     <br>
                     <h3>Tech Used: Html, CSS, JavaScript</h3>
                     <br>
                     <div>
-                       <button onclick="redbus_git()" class="newbuttons">Git Repo</button>
-                        <button onclick="redbus_site()" class="newbuttons">Live Site</button>
+                       <button onclick="phonepe_git()" class="newbuttons">Git Repo</button>
+                        <button onclick="phonepe_site()" class="newbuttons">Live Site</button>
                     </div>
                 </div>
             </div>
@@ -263,7 +274,7 @@
         <p><img src="https://github-readme-streak-stats.herokuapp.com/?user=JyotiP123&show_icons=true&theme=light" alt="JyotiP123" /></p>      
     </div>
 
-    <div style="text-align:center; margin-top:-50px; margin-bottom:70px; margin-top: 20px;">
+    <div id="gitlangs">
         <p style="text-align: center;"><img src="https://github-readme-stats.vercel.app/api/top-langs?username=JyotiP123&show_icons=true&theme=light&locale=en&layout=compact" alt="JyotiP123" /></p>
     </div>
 

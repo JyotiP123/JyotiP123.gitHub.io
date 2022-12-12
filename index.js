@@ -45,14 +45,47 @@ let weather_git = () => {
 let weather_site = () => {
     window.open("https://rainbow-faun-1d944d.netlify.app/", "_blank");
 }
-// let hotstar_git = () => {
-//     window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-5/you", "_blank");
-// }
-// let hotstar_site = () => {
-//     window.open("https://sparkling-heliotrope-3eefe7.netlify.app", "_blank");
-// }
+let phonepe_git_git = () => {
+    window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-2/you/PhonePe", "_blank");
+}
+let phonepe_git_site = () => {
+    window.open("https://statuesque-mandazi-aa26dc.netlify.app/", "_blank");
+}
 
+let homepage = () => {
+    var ele = document.getElementById("card0");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, -100);
+}
 
+let About = () => {
+    var ele = document.getElementById("card1");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, 10);
+}
+
+let Skills = () => {
+    var ele = document.getElementById("card2");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, -80);
+}
+
+let Projects = () => {
+    var ele = document.getElementById("card5");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, -100);
+}
+
+let Contact = () => {
+    var ele = document.getElementById("card7");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, 0);
+}
+let Aboutme = () => {
+    var ele = document.getElementById("card1");
+    ele && ele.scrollIntoView(true);
+    window.scrollBy(0, 0);
+}
 
 
 

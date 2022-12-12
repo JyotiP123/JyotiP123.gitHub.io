@@ -100,6 +100,9 @@
   .fa-instagram{
     color: black;
   }
+  .fa-envelope{
+    color: black;
+  }
 
 
 .fa-github:hover {
@@ -109,6 +112,9 @@
     background-color: white;
   }
   .fa-instagram:hover {
+    background-color: white;
+  }
+  .fa-envelope:hover{
     background-color: white;
   }
 
@@ -332,23 +338,47 @@ linear-gradient(-100deg,
     font-weight:bold ;
 }
 
-
-/* #cardnew{
-  width: 101%;
-  height: 45rem;
-  margin: auto;
-  margin-left: -8px;
-} */
-
-
-
 #card5, #card5a{
     width: 101%;
-    height: 45rem;
+    height: auto;
     margin: auto;
     background-color: aliceblue;
-    margin-left: -8px;
+    /* margin-left: -8px; */
     /* border: 1px solid; */
+}
+
+#proj_title{
+  text-align: center; 
+  color:rgb(23, 37, 56); 
+  font-size: 33px; 
+  padding-top: 25px; 
+  font-weight: 600;
+}
+
+#projectlist{
+  width: 85%; 
+  /* border: 1px solid; */
+  margin: auto; 
+  display:grid; 
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(2, 45rem);
+  gap: 50px;
+  padding-left: 50px;
+  
+}
+#projectlist > div{
+  padding: 30px;
+  text-align: center;
+  background-color: white; 
+  height: 35rem; 
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#gitlangs{
+  text-align:center; 
+  margin-top:-50px; 
+  margin-bottom:70px; 
+  margin-top: 20px;
 }
 
 .newbuttons{
@@ -416,32 +446,181 @@ linear-gradient(-100deg,
     gap: 50px;
   }
   
-  
-  @media (max-width:950px){
-    #othergithub {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(2, 15rem);
-    }
+
+/* responsive media query start */
+
+@media only screen and (max-width: 1400px) and (min-width: 1080px) {
+  #navbar{
+    width: 10rem;
+    height: 43.2rem;
+    display: block;
+  }
+  #rightmenus{
+    display: block;
+  }
+  #card1{
+    height: 55rem;
+    display: block;
+    text-align: center;
+  }
+  #aboutinfo, #resume{
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+  #card3{
+    height: 50rem;
+  }
+  #projectlist{
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 45rem);
+    gap: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 1079px) and (min-width: 840px) {
+  #navbar{
+    width: 10rem;
+    height: 43.2rem;
+    display: block;
+  }
+  #rightmenus{
+    display: block;
+  }
+  #card1{
+    height: 70rem;
+    display:block;
+    text-align: center;
+  }
+  #jyotipic{
+    margin-left: 300px;
+    margin-top: 0px;
+  }
+  #aboutinfo{
+    margin-top: 50px;
+    margin-left: 300px;
   }
 
-  #activitygraph{
-    width:70%;
-    margin: auto;
-  }
-  
-  #activitygraph  img{
-    width: 100%;
-  }
-  
-  @media (max-width:900px){
-    #activitygraph {
-      width: 70%;
-    }
-  }
-  
-  @media (max-width:650px){
-    #activitygraph {
-      width: 70%;
-    }
+  #resume{
+    margin-left: 50px;
   }
 
+  #aboutinfo{
+    width: auto;
+  }
+  #card2{
+    height: 40rem;
+  }
+  #skill-section{
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 5rem);
+    gap: 50px;
+  }
+  #card3{
+    height: 60rem;
+  }
+  #education-tabs{
+    margin-left: 240px;
+  }
+
+  #card5{
+    height: 300rem;
+  }
+  #projectlist{
+    margin-left: 200px;
+    grid-template-columns: repeat(1, 70%);
+    grid-template-rows: repeat(6, 45rem);
+    gap: 50px;
+  }
+  #card6{
+    margin-left: 100px;
+  }
+  #othergithub{
+    margin-left: 200px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20rem;
+  }
+}
+
+@media only screen and (max-width: 839px) and (min-width: 300px) {
+  #navbar{
+    width: 10rem;
+    height: 43.2rem;
+    display: block;
+  }
+  #container > h1{
+    margin-top: -200px;
+  }
+  #social_icons{
+    display: block;
+  }
+  #rightmenus{
+    display: block;
+  }
+  #card1{
+    height: 110rem;
+    display:block;
+    text-align: center;
+  }
+  #jyotipic{
+    margin-left: 200px;
+    margin-top: 0px;
+  }
+  #aboutinfo{
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+
+  #aboutinfo{
+    width: auto;
+  }
+  #card2{
+    height: 70rem;
+    margin-left: 70px;
+  }
+  #skill-section{
+    grid-template-columns: repeat(1, 50%);
+    grid-template-rows: repeat(8, 5rem);
+    gap: 50px;
+  }
+  #card3{
+    height: 70rem;
+  }
+  #edu_title{
+    margin-left: 100px;
+  }
+  #education-tabs{
+    margin-left: 200px;
+  }
+
+  #card5{
+    height: 300rem;
+  }
+  #projectlist{
+    margin-left: 150px;
+    grid-template-columns: repeat(1, 70%);
+    grid-template-rows: repeat(6, 45rem);
+    gap: 50px;
+  }
+  #card6{
+    margin-left: 100px;
+  }
+  #gitlangs{
+    margin-left: 80px;
+  }
+  #othergithub{
+    margin-left: 200px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 20rem;
+  }
+}
+
+
+
+
+
+
+
+
+  
+ 
