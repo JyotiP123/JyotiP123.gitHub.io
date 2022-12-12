@@ -45,10 +45,10 @@ let weather_git = () => {
 let weather_site = () => {
     window.open("https://rainbow-faun-1d944d.netlify.app/", "_blank");
 }
-let phonepe_git_git = () => {
+let phonepe_git = () => {
     window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-2/you/PhonePe", "_blank");
 }
-let phonepe_git_site = () => {
+let phonepe_site = () => {
     window.open("https://statuesque-mandazi-aa26dc.netlify.app/", "_blank");
 }
 
