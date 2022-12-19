@@ -33,11 +33,11 @@ let redbus_git = () => {
 let redbus_site = () => {
     window.open("https://phenomenal-kleicha-acfce4.netlify.app/", "_blank");
 }
-let hotstar_git = () => {
-    window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-5/you", "_blank");
+let GardenGreens_git = () => {
+    window.open("https://github.com/vivekraj21/spooky-approval-5103", "_blank");
 }
-let hotstar_site = () => {
-    window.open("https://sparkling-heliotrope-3eefe7.netlify.app", "_blank");
+let GardenGreens_site = () => {
+    window.open("https://drive.google.com/file/d/1FmdL1pRTIosr67cbZPksqyzeNpUuhH57/view", "_blank");
 }
 let weather_git = () => {
     window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-4/you", "_blank");
@@ -45,11 +45,11 @@ let weather_git = () => {
 let weather_site = () => {
     window.open("https://rainbow-faun-1d944d.netlify.app/", "_blank");
 }
-let phonepe_git = () => {
-    window.open("https://github.com/masai-course/Jyoti_fw19_0753/tree/master/unit-3/sprint-2/day-2/you/PhonePe", "_blank");
+let mgnrega_git = () => {
+    window.open("https://github.com/JyotiP123/sweet-wind-828", "_blank");
 }
-let phonepe_site = () => {
-    window.open("https://statuesque-mandazi-aa26dc.netlify.app/", "_blank");
+let mgnrega_site = () => {
+    window.open("https://drive.google.com/file/d/1ICmD3T57LRI82eUm8u7oSNA97IxCsQ0W/view?usp=sharing", "_blank");
 }
 
 let homepage = () => {
