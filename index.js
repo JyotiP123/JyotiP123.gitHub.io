@@ -1,18 +1,18 @@
-// let showgithub = () => {
-//     window.open("https://github.com/JyotiP123", "_blank");
-// }
+let showgithub = () => {
+    window.open("https://github.com/JyotiP123", "_blank");
+}
 let showresume = () => {
     window.open("https://drive.google.com/file/d/10lY_7N0o30qTEa2__tpLtO_X8WrLIkWG/view", "_blank");
 }
-// let showlinkedin = () => {
-//     window.open("https://www.linkedin.com/in/jyoti-pardhi-5b783b14b", "_blank");
-// }
-// let showmail = () => {
-//     window.open("https://mail.google.com/mail/u/0/", "_blank");
-// }
-// let showinsta = () => {
-//     window.open("https://www.instagram.com/jyoti__pardhi/", "_blank");
-// }
+let showlinkedin = () => {
+    window.open("https://www.linkedin.com/in/jyoti-pardhi-5b783b14b", "_blank");
+}
+let showmail = () => {
+    window.open("https://mail.google.com/mail/u/0/", "_blank");
+}
+let showinsta = () => {
+    window.open("https://www.instagram.com/jyoti__pardhi/", "_blank");
+}
 
 
 let overstock_git = () => {
@@ -71,9 +71,9 @@ let Skills = () => {
 }
 
 let Projects = () => {
-    var ele = document.getElementById("card5");
+    var ele = document.getElementById("projectlist");
     ele && ele.scrollIntoView(true);
-    window.scrollBy(0, -100);
+    window.scrollBy(0, 0);
 }
 
 let Contact = () => {
@@ -92,5 +92,12 @@ let Aboutme = () => {
 GitHubCalendar(".calendar", "JyotiP123");
 GitHubCalendar(".calendar", "JyotiP123", { responsive: true });
 
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
