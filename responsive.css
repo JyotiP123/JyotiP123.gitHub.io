@@ -1,0 +1,255 @@
+@media screen and (max-width : 900px){
+    
+    #s1down{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: auto;
+        /* height: 0px; */
+        padding-top: 100px;
+    }
+    
+    #s1down #profile{
+    
+        width: 50%;
+        justify-content: center;
+        margin: auto;
+        
+    }
+    #summary{
+    
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #addition{
+        width: 95vw;
+        padding: 0;
+        margin: auto;
+       
+    }
+    
+    .intro h1{
+    
+        font-size: 25px;
+    }
+    
+    .intro p{
+    
+        font-size: 17px;
+    }
+    
+    #projects>.pone,#projects>.pthree,#projects>.pfive{
+    
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+    #projects>.pfour,#projects>.ptwo{
+    
+        display: flex;
+        flex-wrap: wrap-reverse;
+        row-gap: 30px;
+    }
+    
+    }
+    @media  (max-width : 750px){
+       #s1up>.navbar{
+        display: none;
+       }
+    
+       #lets{
+    
+        display: none;
+       }
+    
+    
+    
+       /* ========================================navbar response========================== */
+       .mobile-navbar-btn {
+        display: block;
+        z-index: 999;
+        border: 3px solid #ff9064;
+        color: #212529;
+        opacity: 0.8;
+      }
+    
+      .header {
+        position: relative;
+        opacity: 0.9;
+        position: fixed;
+        background-color: transparent;
+      }
+    
+      .header .logo {
+        width: 25%;
+        display: none;
+    
+      }
+    
+      .navbar {
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: #ff9064;
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        /* to get the tranisition  */
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+    
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+    
+      .navbar-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .active .navbar {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+      }
+    
+      .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+        display: block;
+      }
+    
+      .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+        display: none;
+      }
+    
+    
+    
+       /* ==========================================End=================================== */
+    
+    }
+    
+    
+    @media screen and (max-width : 700px){
+    
+    
+    .intro p{
+    
+        font-size: 15px;
+    }
+    .streaks>img{
+        width: 100%;
+        padding: 10px 2px;
+     
+    }
+    #addition{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    
+    .hide{
+        display: none;
+    }
+    #projects>.pone,#projects>.pthree,#projects>.pfive{
+    
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    
+    #projects>.pfour,#projects>.ptwo{
+    
+        display: flex;
+        flex-wrap: wrap-reverse;
+        row-gap: 30px;
+    }
+    
+    .contservice{
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+    }
+    
+    #s1down {
+    
+        padding-top: 200px;
+    }
+    }
+    
+    @media screen and (max-width : 500px){
+        
+        #addition{
+            display: none;
+        }
+    
+        .outintro{
+            display: flex;
+            flex-direction: column-reverse;
+            width: 90%;
+            row-gap: 20px;
+        }
+    
+        #skills{
+            padding: 50px 0px;
+    
+        }
+        #skills>div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 50px;
+            
+        }
+    
+        #projects>.pone,#projects>.pthree,#projects>.pfive{
+    
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+    
+        #projects>.pfour,#projects>.ptwo{
+    
+            display: flex;
+            flex-wrap: wrap-reverse;
+            row-gap: 30px;
+        }
+    
+        .cmain{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+        }
+        .cc{
+            text-align: center;
+        }
+        .streaks{
+            display: flex;
+            flex-direction: column;
+        }
+        .streaks>img{
+            width: 90%;
+            padding: 10px;
+         
+        }
+    
+        .contservice{
+            grid-template-columns: 1fr;
+            
+        }
+    
+        #s1down {
+    
+            padding-top: 120px;
+        }
+        
+    }
