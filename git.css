@@ -115,7 +115,7 @@
       color: #767676;
   }
   .left.text-muted a {
-      color: #c07e40;
+      color: teal;
       text-decoration: none;
   }
   .left.text-muted a:hover,

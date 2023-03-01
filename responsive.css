@@ -71,7 +71,7 @@
        .mobile-navbar-btn {
         display: block;
         z-index: 999;
-        border: 3px solid #ff9064;
+        border: 3px solid teal;
         color: #212529;
         opacity: 0.8;
       }

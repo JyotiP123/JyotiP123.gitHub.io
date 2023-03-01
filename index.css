@@ -8,7 +8,7 @@
 }
 
 #main {
-    background-image: url(./images/orangeback.webp);
+    background-image: url(./images/b2.jpg);
     width: 100%;
     height: 100vh;
     display: grid;
@@ -29,7 +29,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(255, 144, 100);
+    background-color: rgb(1, 98, 98);
     opacity: 0.9;
     transition: all 0.3s;
 
@@ -89,7 +89,7 @@
 #lets a:hover {
     transition: background ease-in 400ms;
     background-color: white;
-    color: rgb(255, 144, 100);
+    color: teal;
 
 
 }
@@ -132,7 +132,7 @@
 
 #summary button {
     background-color: white;
-    color: rgb(216, 90, 6);
+    color: teal;
     font-size: 20px;
     padding: 10px 20px;
     border: 2px solid white;
@@ -159,10 +159,15 @@
     grid-template-columns: repeat(3, 1fr);
     width: 80vw;
     margin: auto;
-    color: white;
+    /* color: white; */
     padding: 50px 0px;
     letter-spacing: 1px;
     font-family: "Roboto Condensed", sans-serif;
+    /* background: teal; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)),
+    url('./images/b2.jpg');
+color: white;
+background-attachment: fixed;
 }
 
 #addition p {
@@ -314,7 +319,7 @@ hr {
     background-size: contain;
     /* background-image: url(./images/vectorblack.jpg); */
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .8)),
-        url('./images/b3.jpg');
+        url('./images/b2.jpg');
     color: white;
     background-attachment: fixed;
 }
@@ -435,8 +440,8 @@ hr {
 .cright>button {
     padding: 10px 0px;
     text-align: center;
-    background-color: #ff9064;
-    border: 1px solid #ff9064;
+    background-color: teal;
+    border: 1px solid teal;
     border-radius: 7px;
     font-size: 18px;
     color: white;
@@ -512,7 +517,7 @@ body {
     opacity: 0.9;
     position: fixed;
     width: 100%;
-    background-color: #ff9064;
+    background-color: teal;
 }
 
 .header .logo {
@@ -528,7 +533,7 @@ body {
 
 .mobile-navbar-btn {
     display: none;
-    background: #ff9064;
+    background: teal;
     cursor: pointer;
    
  
